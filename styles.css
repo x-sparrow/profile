@@ -1,0 +1,227 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #11131b;
+    color: #fff;
+    overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+
+.gradient-text {
+    background: linear-gradient(90deg, #ff0066, #ffcc00, #00f2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.connect-hero {
+    background: linear-gradient(120deg, #222c31 60%, #210e32 100%);
+    padding: 5rem 0 3.5rem 0;
+    text-align: center;
+    box-shadow: 0 8px 36px 0 rgba(0,0,0,0.25);
+}
+.connect-title {
+    font-size: 3.2rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0.2em;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.connect-line {
+    width:90px; 
+    margin:2rem auto 2rem auto; 
+    height: 0; 
+    border: solid 0;
+    border-top: 6px solid #ffcc00;
+    border-radius: 8px;
+}
+.connect-subtitle {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #00f2ff;
+    text-shadow: 0 2px 8px #111b2f44;
+}
+
+.contact-cards {
+    display:flex;
+    gap:2.2rem;
+    justify-content: center;
+    margin-top:3rem;
+    flex-wrap: wrap;
+}
+.contact-card {
+    background: #202854;
+    padding:2.2rem 2.6rem;
+    border-radius:2rem;
+    text-align:center;
+    box-shadow:0 8px 30px 0 #060b1a30;
+    min-width:220px;
+    min-height:380px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    transition:.18s all;
+}
+.contact-card:hover {
+    transform:translateY(-8px) scale(1.025);
+    box-shadow:0 16px 40px 0 #15193f55;
+}
+.contact-img {
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:1.2rem;
+    border:6px solid #ffcc00;
+    background:#fff;
+    box-shadow:0 0 0 4px #fff9;
+}
+.card-telegram .contact-img {border-color:#ffcc00;}
+.card-github .contact-img {border-color:#00f2ff;}
+.contact-handle {
+    font-size:2rem;
+    font-weight:900;
+    margin:1rem 0;
+    color:#00f2ff;
+    font-family: 'Orbitron', sans-serif;
+}
+.card-github .contact-handle {color:#171515;}
+.contact-btn {
+    display:inline-block;
+    font-size:1.15rem;
+    letter-spacing:1px;
+    padding:0.8rem 2.2rem;
+    border-radius:2rem;
+    font-weight:800;
+    margin-top:1rem;
+    transition:background 0.2s, color 0.2s;
+    box-shadow: 0 4px 20px 0 #0508180c;
+}
+.telegram-btn {
+    background:#0088cc;
+    color:#fff;
+}
+.telegram-btn:hover {
+    background:#035e90;
+}
+.github-btn {
+    background:#171515;
+    color:#fff;
+}
+.github-btn:hover {
+    background:#24292f;
+}
+@media (max-width: 800px) {
+    .contact-cards { flex-direction: column; align-items:center; gap:2rem; }
+    .connect-title {font-size:2.3rem;}
+}
+.navbar {
+    width:100vw; background:#121420e8;
+    position:fixed;top:0;left:0;z-index:90;
+}
+.nav-container {
+    display:flex; align-items:center;justify-content:space-between;
+    max-width:1100px;margin:auto;padding:1.1rem 2.2rem;
+}
+.nav-logo .logo-text {
+    font-size:2.2rem;
+    font-weight:900;
+    background: linear-gradient(45deg,#ff0066,#ffcc00,#00f2ff);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    letter-spacing: 2px;
+}
+.nav-menu {list-style:none;display:flex}
+.nav-link {
+    margin-left:2.1rem;
+    color:#fff;
+    font-weight:700;
+    font-size:1.08rem;
+    letter-spacing:0.7px;
+    transition:color .2s;
+}
+.nav-link:hover { color:#ffcc00;}
+.hamburger { display: none;} /* add mobile menu if needed */
+.section-title {
+    color: #ffcc00;
+    background: linear-gradient(90deg,#ff0066,#ffcc00,#00f2ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    font-family:'Orbitron',sans-serif;
+    font-size:2.4rem;font-weight:900;
+    text-align:center;margin-bottom:2rem;margin-top:2rem;
+    letter-spacing:1.5px;
+}
+.about {background:#172133;padding:5rem 0;}
+.about-content {display:flex;align-items:center;gap:3rem;max-width:950px;margin:auto;}
+.about-image {flex:0 0 160px;}
+.about-avatar {
+    width:160px;height:160px;border-radius:50%;border:7px solid #ffcc00;background:#fff;box-shadow:0 0 18px #08092433;
+}
+.about-text {font-size:1.18rem;line-height:1.7;}
+@media (max-width:900px){.about-content{flex-direction:column;gap:1.4rem;}}
+/* Skills Section */
+.skills {background:#18203e;padding:5rem 0;}
+.skills-grid {display: grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:2.1rem;max-width: 1000px;margin:auto;}
+.skill-card {
+    background:#1e283d;
+    color:#fff;
+    border-radius:1.4rem;
+    padding:1.6rem 1rem;
+    text-align: center;
+    font-weight:700;
+    font-size:1.24rem;
+    box-shadow:0 7px 24px 0 #090e2c1a;
+    display:flex;flex-direction:column;align-items:center;
+    transition:.19s all;
+}
+.skill-card:hover {transform:scale(1.07);}
+.skill-icon {
+    font-size:2.9rem;
+    margin-bottom:0.9rem;
+    background:linear-gradient(90deg,#ff0066,#ffcc00,#00f2ff);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    display:block;
+}
+.projects {background:#111529;padding:5rem 0;}
+.projects-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:2rem;max-width:1020px;margin:auto;
+}
+.project-card {
+    background:#1b1d2a;
+    color:#fff;
+    border-radius:1.5rem;
+    padding:2.2rem 1rem;
+    text-align: center;
+    box-shadow:0 7px 24px 0 #090e2c22;
+    display:flex;flex-direction:column;align-items:center;
+    transition:.16s all;
+}
+.project-card:hover {transform:scale(1.04);}
+.project-icon {font-size:2.4rem;margin-bottom:0.8rem;color:#ffcc00;}
+.project-title {font-size:1.27rem;font-weight:800;margin-bottom:0.5rem;}
+.project-desc { font-size:1.01rem; color: #aac8fa;}
+.github-section {background:#191931;padding:4rem 0; text-align: center;}
+.github-btn {
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(90deg,#00f2ff,#ffcc00);
+    padding:0.7rem 1.7rem;
+    margin-top:1.2rem;
+    border-radius: 33px;
+    box-shadow: 0 2px 16px #00f2ff44;
+    display: inline-block;
+    transition:.13s all;
+}
+.github-btn:hover {background:linear-gradient(90deg,#ffcc00,#00f2ff);}
+.footer {
+    background:#1f2538;
+    text-align:center;
+    padding:1.7rem 0;
+    color:#ffcc00;
+    font-weight:700;font-size:1.15rem;
+}
+
+::-webkit-scrollbar {width:12px;background:#191931;}
+::-webkit-scrollbar-thumb {background:#282f47;border-radius:8px;}
